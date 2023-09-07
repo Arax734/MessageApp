@@ -8,19 +8,27 @@
     <body>
         <div class="container flexbox">
             <div class="flexbox loginform">
-                <form class="flexbox">
+                <form class="flexbox" method="post" action="php_scripts/create_account.php">
                     <h1>Welcome to MessageApp!</h1>
                     <div class="forminput">
-                        <a>Login:</a>
-                        <input type="text" autocomplete="off">
+                        <a>Username:</a>
+                        <input name="username" type="text" autocomplete="off">
+                    </div>
+                    <div class="forminput">
+                        <a>Name:</a>
+                        <input name="name" type="text" autocomplete="off">
+                    </div>
+                    <div class="forminput">
+                        <a>Surname:</a>
+                        <input name="surname" type="text" autocomplete="off">
                     </div>
                     <div class="forminput">
                         <a>Password:</a>
-                        <input type="password" autocomplete="off">
+                        <input name="password" type="password" autocomplete="off">
                     </div>
                     <div class="forminput">
                         <a>Repeat password:</a>
-                        <input type="password" autocomplete="off">
+                        <input name="repeat_password" type="password" autocomplete="off">
                     </div>
                     <button id="register" type="submit">Register</button>
                     <div class="signin flexbox">

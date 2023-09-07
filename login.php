@@ -8,15 +8,15 @@
     <body>
         <div class="container flexbox">
             <div class="flexbox loginform">
-                <form class="flexbox">
+                <form class="flexbox" method="post" action="php_scripts/login_into.php">
                     <h1>Welcome to MessageApp!</h1>
                     <div class="forminput">
-                        <a>Login:</a>
-                        <input type="text" autocomplete="off">
+                        <a>Username:</a>
+                        <input name="username" type="text" autocomplete="off">
                     </div>
                     <div class="forminput">
                         <a>Password:</a>
-                        <input type="password" autocomplete="off">
+                        <input name="password" type="password" autocomplete="off">
                     </div>
                     <button id="login" type="submit">Log in</button>
                     <div class="signin flexbox">
