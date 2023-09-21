@@ -22,7 +22,7 @@
         $result_pass = $conn->query($pass);
         $row = $result_pass->fetch_assoc();
         if($row['password'] == $password){
-            echo "Zalogowano pomyślnie!";
+            header('Location: ../main.php');
         }
         else{
             header('Location: ../login.php');
