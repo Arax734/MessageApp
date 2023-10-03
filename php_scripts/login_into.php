@@ -22,6 +22,8 @@
         $result_pass = $conn->query($pass);
         $row = $result_pass->fetch_assoc();
         if($row['password'] == $password){
+            session_start();
+            $_SESSION['login'] = $username;
             header('Location: ../main.php');
         }
         else{
